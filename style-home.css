@@ -95,7 +95,7 @@ header {
 }
 
 header.sticky {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(60, 60, 60, 0.5);
   backdrop-filter: blur(8px);
   padding: 15px 100px;
   padding-top: 30px;
@@ -200,15 +200,32 @@ section.banner .profile-area .inner-circle{
   overflow: hidden;
 }
 
+/* ============ Features =================*/
+
 section.features {
-  padding: 80px;
+  padding-top: 100px;
+  padding-left: 100px;
+  background-color: black;
 }
 
 section.features h5{
-  color: white;
+  color: var(--color-primary);
   margin-bottom: 20px;
 }
 
 section.features h3{
   color: white;
+}
+
+section.features p{
+  padding-top: 20px;
+  width: 40vw;
+}
+
+section.features .container{
+  display: grid;
+  padding: 40px;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  justify-content: left;
 }
