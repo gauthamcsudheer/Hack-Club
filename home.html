@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack Club</title>
+
+    <link rel="stylesheet" href="./style-home.css">
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon_io/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <style> @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap'); </style>
+
+</head>
+<body>
+
+  <header>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  
+  <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 80);
+    })
+  </script>
+
+   <!-- Banner -->
+   
+  <section class="banner">
+    <div class="container">
+      <div class="profile-area">
+        <div class="inner-circle">
+           <img src="./images/IMAG-white.png">
+        </div>
+      </div>
+
+      <div class="info">
+        <h3>Welcome to Hack Club</h3>
+        <h1>We're at our best</h1>
+       </div>
+    </div>
+  </section>
+    
+    <!-- Features -->
+
+  <section class="features">
+    <h5>Features</h5>
+    <h3>Hack Club RSET</h3>
+  </section>
+
+    <!-- Events -->
+
+    <section class="events" id="events">
+        <h1>Events</h1>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+        <h1>Contact</h1>
+    </section>
+
+</body>
+</html>
