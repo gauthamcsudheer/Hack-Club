@@ -95,7 +95,7 @@ header {
 }
 
 header.sticky {
-  background-color: rgba(60, 60, 60, 0.5);
+  background-color: rgba(60, 60, 60, 0.6);
   backdrop-filter: blur(8px);
   padding: 15px 100px;
   padding-top: 30px;
@@ -139,17 +139,6 @@ section.banner {
   background: url(./images/bg.png);
   background-size: cover;
 }
-
-
-/*
-section.banner {
-  display: grid;
-  place-items: center;
-  position: relative;
-  top: 5rem;
-  padding-bottom: 14rem;
-}
-*/
 
 section.banner .container{
   display: grid;
@@ -228,4 +217,39 @@ section.features .container{
   grid-template-columns: auto auto auto auto;
   align-items: center;
   justify-content: left;
+}
+
+/* ================= About =====================*/
+
+section.about {
+  background-color: white;
+}
+
+section.about .about-area {
+  margin: 80px 100px 80px;
+  padding:  80px 80px 20px;
+  background-color: black;
+}
+
+section.about .about-area h5 {
+  padding: 10px;
+  width: fit-content;
+  color: white;
+  background-color: var(--color-primary);
+}
+
+section.about .about-area .container{
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: auto auto;
+  justify-content: left;
+}
+
+section.about .about-area .container .description h3 {
+  color: white;
+}
+
+section.about .about-area .container .description p {
+  margin-top: 20px;
+  color: #505050;
 }
