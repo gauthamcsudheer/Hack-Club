@@ -3,8 +3,7 @@
   --color-light: #f4f4f4;
   --color-dark: #525252;
   --color-black: #141415;
-  --color-primary: #EC1C24;
-  --color-primary-light: #FF726F;
+  --color-primary: #ff4441;
   --color-success: #29f5a6;
   --color-warning: #ffce31;
 
@@ -189,7 +188,7 @@ section.banner .profile-area .inner-circle{
   overflow: hidden;
 }
 
-/* ============ Features =================*/
+/* ============ Features 
 
 section.features {
   padding-top: 100px;
@@ -218,6 +217,8 @@ section.features .container{
   align-items: center;
   justify-content: left;
 }
+
+=================*/
 
 /* ================= About =====================*/
 
@@ -251,5 +252,89 @@ section.about .about-area .container .description h3 {
 
 section.about .about-area .container .description p {
   margin-top: 20px;
-  color: #505050;
+  color: #6a6a6a;
+}
+
+/* ============== Contact ====================*/
+
+section.contact {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(245, 245, 255) 0%,
+    rgb(245, 245, 255) 50%,
+    white 50%,
+    white 100%
+  );
+  height: fit-content;
+  padding: 80px
+}
+
+section.contact .container {
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: auto 400px;
+  align-items: left;
+  justify-content: left;
+}
+
+section.contact .container .contact-details {
+  padding: 40px;
+  margin-top: 20px;
+}
+
+section.contact .container .contact-details h3 {
+  margin-top: 20px;
+  margin-bottom: 180px;
+  width: 400px;
+}
+
+section.contact .container .contact-details .contact-info {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 80px;
+}
+
+section.contact .container .contact-details .contact-info .location p {
+  width: 360px;
+  margin-top: 10px;
+}
+
+section.contact .container .contact-details .contact-info .email h4 {
+  margin-bottom: 10px;
+}
+
+section.contact .container .contact-link {
+  background-color: black;
+  width: 400px;
+  border-radius: 10px;
+  padding: 40px;
+  margin-left: 100px;
+}
+
+section.contact .container .contact-link h3 {
+  color: white;
+  text-align: center;
+}
+
+section.contact .container .contact-link img {
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+section.contact .container .contact-link button {
+  padding: 10px 20px 10px;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 110px;
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  color: white;
+  transition: scale 300ms;
+}
+
+section.contact .container .contact-link button:hover {
+  cursor: pointer;
+  scale: 120%;
+  background-color: #ff6565;
 }
