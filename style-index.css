@@ -161,7 +161,7 @@ section.banner .info h3{
 }
 
 section.banner .info h1{
-  width: 40rem;
+  width: 60rem;
   margin-bottom: 1rem;
   color: white;
   margin-left: 25px;
@@ -267,7 +267,7 @@ section.contact {
     white 100%
   );
   height: fit-content;
-  padding: 80px
+  padding: 60px
 }
 
 section.contact .container {
@@ -286,7 +286,7 @@ section.contact .container .contact-details {
 section.contact .container .contact-details h3 {
   margin-top: 20px;
   margin-bottom: 180px;
-  width: 400px;
+  width: 600px;
 }
 
 section.contact .container .contact-details .contact-info {
@@ -309,7 +309,7 @@ section.contact .container .contact-link {
   width: 400px;
   border-radius: 10px;
   padding: 40px;
-  margin-left: 100px;
+  margin-left: 200px;
 }
 
 section.contact .container .contact-link h3 {
