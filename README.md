@@ -1,2 +1,1 @@
-# hack-club
-Hack Club Website
+# hackclub

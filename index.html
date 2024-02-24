@@ -1,136 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hack Club</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HackClubRSET</title>
 
-    <link rel="stylesheet" href="./style-index.css">
+    <!--====== Favicon Icon ======-->
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/IMG_8163.PNG"
+      type="image/svg"
+    />
 
-    <link rel="icon" type="image/x-icon" href="/images/favicon_io/favicon.ico">
+    <!-- ===== All CSS files ===== -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/lineicons.css" />
+    <link rel="stylesheet" href="assets/css/ud-styles.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  </head>
+  <body>
 
-    <style> @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap'); </style>
 
-</head>
-<body>
+    <!-- ====== Header Start ====== -->
 
-  <header>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#">Events</a></li>
-      <li><a href="#">Team</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </header>
-  
-  <script type="text/javascript">
-    window.addEventListener("scroll", function(){
-    var header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 80);
-    })
-  </script>
-
-   <!-- Banner -->
-   
-  <section class="banner">
-    <div class="container">
-      <div class="profile-area">
-        <div class="inner-circle">
-           <img src="./images/IMAG-white.png">
-        </div>
-      </div>
-
-      <div class="info">
-        <h3>Welcome to Hack Club</h3>
-        <h1>We're at our best</h1>
-       </div>
-    </div>
-  </section>
-    
-  <!--  Features
-
-  <section class="features">
-    <h5>Features</h5>
-    <h3>Hack Club RSET</h3>
-    <p>Making all concepts worth learning. If we are rewarded for learning it acts as a motivation to learn more.</p>
-
-    <div class="container">
-      <div class="feat1">
-        <img src="./images/IMAG-white.png">
-      </div>
-
-      <div class="feat2">
-        <img src="./images/IMAG-white.png">
-      </div>
-
-      <div class="feat3">
-        <img src="./images/IMAG-white.png">
-      </div>
-
-      <div class="feat4">
-        <img src="./images/IMAG-white.png">
-      </div>
-
-    </div>
-
-  </section>
-
-  -->
-
-  <!-- About -->
-
-  <section class="about" id="about">
-    <div class="about-area">
-      <h4>About Us</h4>
+    <header class="ud-header">
 
       <div class="container">
-        <div class="description">
-          <h3>Platform to learn anything</h3>
-          <p>Rather than promising students a vibrant future that may or may not happen, we believe in a short-term reward approach without compromising on the former. In our format, a student that advances to the next level will be rewarded with an ordained amount of a specific cryptocurrency. Students may also earn additional rewards on completion of quizzes , tests, mentoring and other activities which uplift's the spirit of learning. By doing so, we ensure that the spirits of the students are kept unwaveringly high as we give them incentives to work harder and achieve greater.</p>
-          <p>The main ‘thrust’ is to focus on educating attendees on how to be the best of themselfs.</p>
-        </div>
-  
-        <div class="image">
-          <img src="./images/IMAG-white.png">
-        </div>
-      </div>
+        <div class="row" style="padding-bottom:1px">
+          <div class="col-lg-12">
 
-    </div>
-  </section>
-
-  <!-- Contact -->
-
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-details">
-        <h5>CONTACT US</h5>
-        <h3>Let’s talk about ideas<br>Love to hear from you!</h3>
-        <div class="contact-info">
-          <div class="location">
-            <h4>Our location</h4>
-            <p>Rajagiri School of Engineering and Technology, Cochin</p>
+            <nav class="navbar navbar-expand-lg navbar-brand">
+              <button class="navbar-toggler">
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+              </button>
+              <div class="navbar-collapse">
+                <ul id="nav" class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#home" style="color: #ec3750">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="team.html#team" style="color: #ec3750">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#events" style="color: #ec3750">Event</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#about" style="color: #ec3750">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#contact" style="color: #ec3750">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
-          <div class="email">
-            <h4>How can we help?</h4>
-            <p>hackclubrset@gmail.com</p>
-            <p>helpdeskhcrset@gmail.com</p>
+        </div>
+      </div>
+    </header>
+    <!-- ====== Header End ====== -->
+
+    <!-- ====== Hero Start ====== -->
+
+    <section class="ud-hero" id="home">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="ud-fadeInDown" data-wow-delay="2.5s">
+              <div class="ud-logo-image">
+              <img src="assets/images/logo/IMAG-white.png">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-9">
+            <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
+              <h3  class="ud-hero-wts" >
+               WELCOME TO HACK CLUB
+              </h3>
+              <h1 class="ud-hero-title" style="color: #f5f5f5;">#letsgrowtogether.</h1>
+              <div style="text-align: center;">
+                <a href="https://forms.gle/dmS3yemp6UXM8LVo8"  target=”_blank”>
+                <button  class="ud-main-btn" style="margin-top: 24px;">
+                  Join Now!
+                </button>
+              </a>
+              </div>
+
+
+            </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ====== Hero End ====== -->
+
+    <!-- ====== Features Start ====== -->
+    <section id="features" class="ud-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-section-title">
+              <span>Features</span>
+              <h2 style="color:white">Hack Club RSET</h2>
+              <p>
+                We learn ourselves, We create the interest, We chase it!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".1s">
+              <div class="ud-feature-icon">
+                <i class="lni lni-code"></i>
+              </div>
+              <div class="ud-feature-content">
+                <h3 class="ud-feature-title" style="color: #f5f5f5;">Code & Learn</h3>
+                <p class="ud-feature-desc">
+                  Through our events & workshops you'll be walked through building projects, developing more insight as you go.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".15s">
+              <div class="ud-feature-icon">
+                <i class="lni lni-target"></i>
+              </div>
+              <div class="ud-feature-content">
+                <h3 class="ud-feature-title" style="color: #f5f5f5;">Learn, Teach, Hack</h3>
+                <p class="ud-feature-desc">
+                  We help you become a developer in all aspects.
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".2s">
+              <div class="ud-feature-icon">
+                <i class="lni lni-website"></i>
+              </div>
+              <div class="ud-feature-content">
+                <h3 class="ud-feature-title" style="color: #f5f5f5;">Start Building</h3>
+                <p class="ud-feature-desc">
+                  In Hack Club you build and ship a project every meeting.
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".25s">
+              <div class="ud-feature-icon">
+                <i class="lni lni-git"></i>
+              </div>
+              <div class="ud-feature-content">
+                <h3 class="ud-feature-title" style="color: #f5f5f5;">Be part of a Community</h3>
+                <p class="ud-feature-desc">
+                  We give you a community of thousands of other aspring students to talk to. We're artists, writers, engineers, campers filmmakers and volunteers!
+                </p>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="contact-link">
-        <h3>Join us now</h3>
-        <img src="./images/qr1.jpg">
-        <button class="join-btn">Join Now</button>
-      </div>
-      
-    </div>
-  </section>
+    </section>
+    <!-- ====== Features End ====== -->
 
-</body>
+    <!-- ====== About Start ====== -->
+    <section id="about" class="ud-about">
+      <div class="container">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+          <div class="ud-about-content-wrapper">
+            <div class="ud-about-content">
+              <span class="tag">About Us</span>
+              <h2 style="color: #f5f5f5;">Platform to learn anything. </h2>
+              <p>
+                Learning to code is uniquely like gaining a superpower-turning you from a user of technology into a creator. So it shouldn't be taught like a class -it should be a creative, inclusive and interactive space. To foster this environment, every Hack Club is student led & members make self-directed
+projects. RSET Hack club intend to create such an environment.
+              </p>
+              <p>
+                The main ‘thrust’ is to focus on educating attendees on how to
+                be the best of themselfs.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ====== About End ====== -->
+
+    <!-- ====== Explore Start ====== -->
+    <section id="events" class="ud-pricing">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-section-title mx-auto text-center">
+              <span>LineUp</span>
+              <h2>Our Past Events.</h2>
+              <p>
+                Check out and start participating!.
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="assets/images/hackernal.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Hackernal</h2>
+                            <p class="description">A 24 hour hackathon organized by Hack Club, packed with fun, entertainment and much more!</p>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="assets/images/aaramb.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Aarambh 1.0</h2>
+                            <p class="description">An initiative by Hack Club to celebrate Onam 2021 online. There were a total of 10 events that lasted for 4 days.</p>
+
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="assets/images/java gui.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Intro to GUI Programming</h2>
+                            <p class="description">An opportunity to test your doding and designing skills and make a perfect GUI Application using Java.</p>
+
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="assets/images/web.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Web Development</h2>
+                            <p class="description">An event to learn and improve your coding skills. It was a one day offline workshop for Web Development.</p>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- ====== Explore End ====== -->
+
+
+
+    <!-- ====== Contact Start ====== -->
+    <section id="contact" class="ud-contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-8 col-lg-7">
+            <div class="ud-contact-content-wrapper">
+              <div class="ud-contact-title">
+                <span>CONTACT US</span>
+                <h2>
+                  Let’s talk about ideas<br />
+                  Love to hear from you!
+                </h2>
+              </div>
+              <div class="ud-contact-info-wrapper">
+                <div class="ud-single-info">
+                  <div class="ud-info-icon">
+                    <i class="lni lni-map-marker"></i>
+                  </div>
+                  <div class="ud-info-meta">
+                    <h5>Our Location</h5>
+                  <p>Rajagiri School of Engineering & Technology
+                     Rajagiri Valley, Kakkanad, Kochi 682 039 Kerala INDIA
+                     Tel: +91 484 2660999</p>
+                  </div>
+
+                </div>
+                <div class="ud-single-info">
+                  <div class="ud-info-icon">
+                    <i class="lni lni-envelope"></i>
+                  </div>
+                  <div class="ud-info-meta">
+                    <h5>How Can We Help?</h5>
+                    <p>hackclubrset@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div
+              class="ud-contact-form-wrapper wow fadeInUp"
+              data-wow-delay=".2s"
+            >
+              <h3 style="text-align: center; color: #f5f5f5; padding-bottom:5px;" >Scan Me ⬇</h3>
+                <img src="assets/images/brands/qr.png">
+                <div style="text-align: center;margin-top:15px;">
+                  <a href="https://forms.gle/dmS3yemp6UXM8LVo8"  target=”_blank”>
+                    <button class="ud-main-btn">
+                      Join, it's free!
+                    </button>
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Contact End ====== -->
+
+    <!-- ====== Footer Start ====== -->
+    <footer id="footer">
+      <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.instagram.com/hackclubrset/" role="button"
+        ><i class="lni lni-instagram-filled"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.linkedin.com/company/hack-club-rset/" role="button">
+        <i class="lni lni-linkedin-original"></i>
+
+      </a>
+      <p>© Copyright @HackClubRSET</p>
+
+    </footer>
+    <!-- ====== Footer End ====== -->
+
+    <!-- ====== Back To Top Start ====== -->
+    <a href="javascript:void(0)" class="back-to-top">
+      <i class="lni lni-chevron-up"> </i>
+    </a>
+    <!-- ====== Back To Top End ====== -->
+
+    <!-- ====== All Javascript Files ====== -->
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!--script>
+      // ==== for menu scroll
+      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+      pageLink.forEach((elem) => {
+        elem.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(elem.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            offsetTop: 1 - 60,
+          });
+        });
+      });
+
+      // section menu active
+      function onScroll(event) {
+        const sections = document.querySelectorAll(".ud-menu-scroll");
+        const scrollPos =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
+
+        for (let i = 0; i < sections.length; i++) {
+          const currLink = sections[i];
+          const val = currLink.getAttribute("href");
+          const refElement = document.querySelector(val);
+          const scrollTopMinus = scrollPos + 73;
+          if (
+            refElement.offsetTop <= scrollTopMinus &&
+            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+          ) {
+            document
+              .querySelector(".ud-menu-scroll")
+              .classList.remove("active");
+            currLink.classList.add("active");
+          } else {
+            currLink.classList.remove("active");
+          }
+        }
+      }
+
+      window.document.addEventListener("scroll", onScroll);
+    </script-->
+  </body>
 </html>
